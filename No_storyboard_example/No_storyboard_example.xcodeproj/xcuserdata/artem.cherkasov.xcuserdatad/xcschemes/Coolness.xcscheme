@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5C4282591D5DE353009CFDB2"
-               BuildableName = "nibs_examples.app"
-               BlueprintName = "nibs_examples"
-               ReferencedContainer = "container:nibs_examples.xcodeproj">
+               BlueprintIdentifier = "5C4282431D5DE1DC009CFDB2"
+               BuildableName = "Coolness.framework"
+               BlueprintName = "Coolness"
+               ReferencedContainer = "container:No_storyboard_example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5C4282951D5E0A28009CFDB2"
-               BuildableName = "nibs_examplesUITests.xctest"
-               BlueprintName = "nibs_examplesUITests"
-               ReferencedContainer = "container:nibs_examples.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5C4282591D5DE353009CFDB2"
-            BuildableName = "nibs_examples.app"
-            BlueprintName = "nibs_examples"
-            ReferencedContainer = "container:nibs_examples.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -61,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5C4282591D5DE353009CFDB2"
-            BuildableName = "nibs_examples.app"
-            BlueprintName = "nibs_examples"
-            ReferencedContainer = "container:nibs_examples.xcodeproj">
+            BlueprintIdentifier = "5C4282431D5DE1DC009CFDB2"
+            BuildableName = "Coolness.framework"
+            BlueprintName = "Coolness"
+            ReferencedContainer = "container:No_storyboard_example.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5C4282591D5DE353009CFDB2"
-            BuildableName = "nibs_examples.app"
-            BlueprintName = "nibs_examples"
-            ReferencedContainer = "container:nibs_examples.xcodeproj">
+            BlueprintIdentifier = "5C4282431D5DE1DC009CFDB2"
+            BuildableName = "Coolness.framework"
+            BlueprintName = "Coolness"
+            ReferencedContainer = "container:No_storyboard_example.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

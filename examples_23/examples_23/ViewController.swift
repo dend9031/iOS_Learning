@@ -9,12 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    func dogMyCats(s:String) -> String{
+        return "dogs"
+    }
+    
+    // MARK : - view lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    
         
+        NSLog("%@", NSStringFromCGRect(self.view.frame))
         
         self.testDefer()
         do{
@@ -27,6 +31,7 @@ class ViewController: UIViewController {
     }
     
     let which = 0
+    
     
     func testDefer(){
         print("statring")

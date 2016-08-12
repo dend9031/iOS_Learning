@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  nibs_examples
+
+  Created by Artem Cherkasov on 8/12/16.
+  Copyright © 2016 Artem Cherkasov. All rights reserved.
+*/
+"CFBundleDisplayName" = "Empty Window";

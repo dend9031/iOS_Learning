@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  nibs_examples
+
+  Created by Artem Cherkasov on 8/12/16.
+  Copyright © 2016 Artem Cherkasov. All rights reserved.
+*/
+
+/* OK */
+"Accept" = "Acception";
+
+/* You tapped me */
+"AMessage" = "Bonjour";
+
+/* Howdy! */
+"ATitle" = "Bonjour";
