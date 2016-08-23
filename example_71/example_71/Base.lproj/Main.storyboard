@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="example_71" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DH2-7C-bYb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CvO-Tp-zNR">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="gyu-66-aCH" appends="YES" id="L2b-w2-JhY"/>
+                                            <outletCollection property="gestureRecognizers" destination="gyu-66-aCH" appends="YES" id="0R5-2b-gFS"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="CvO-Tp-zNR" firstAttribute="top" secondItem="DH2-7C-bYb" secondAttribute="top" id="1at-CU-HPl"/>
+                                    <constraint firstAttribute="trailing" secondItem="CvO-Tp-zNR" secondAttribute="trailing" id="3ry-UU-lKh"/>
+                                    <constraint firstAttribute="bottom" secondItem="CvO-Tp-zNR" secondAttribute="bottom" id="LlR-KH-dnr"/>
+                                    <constraint firstItem="CvO-Tp-zNR" firstAttribute="centerY" secondItem="DH2-7C-bYb" secondAttribute="centerY" id="N9w-X2-pS9"/>
+                                    <constraint firstItem="CvO-Tp-zNR" firstAttribute="centerX" secondItem="DH2-7C-bYb" secondAttribute="centerX" id="XhM-S5-16w"/>
+                                    <constraint firstItem="CvO-Tp-zNR" firstAttribute="leading" secondItem="DH2-7C-bYb" secondAttribute="leading" id="an2-mM-e2y"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gyu-66-aCH" appends="YES" id="D0A-Nv-Wdv"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DH2-7C-bYb" secondAttribute="trailing" id="4l9-tS-0zM"/>
+                            <constraint firstItem="DH2-7C-bYb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Dal-hk-JCh"/>
+                            <constraint firstItem="DH2-7C-bYb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s7T-bP-2le"/>
+                            <constraint firstItem="DH2-7C-bYb" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="yQw-Oy-2qJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="iv" destination="CvO-Tp-zNR" id="7i6-Yk-sgH"/>
+                        <outlet property="sv" destination="DH2-7C-bYb" id="qI4-xS-YXK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gyu-66-aCH">
+                    <connections>
+                        <action selector="tapped:" destination="BYZ-38-t0r" id="JSv-nv-BKR"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="325" y="400"/>
+        </scene>
+    </scenes>
+</document>

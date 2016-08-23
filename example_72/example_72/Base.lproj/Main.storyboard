@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="example_72" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWb-UO-vpY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redflag.png" translatesAutoresizingMaskIntoConstraints="NO" id="OR1-ne-hQo" customClass="FlagView" customModule="example_72" customModuleProvider="target">
+                                        <rect key="frame" x="377" y="353" width="62" height="39"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fjQ-uR-E8X">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="TaM-xS-966" appends="YES" id="Agn-Gv-wRx"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fjQ-uR-E8X" secondAttribute="bottom" id="K4j-dN-fVN"/>
+                                    <constraint firstItem="fjQ-uR-E8X" firstAttribute="leading" secondItem="HWb-UO-vpY" secondAttribute="leading" id="Qkq-dk-nsy"/>
+                                    <constraint firstItem="fjQ-uR-E8X" firstAttribute="top" secondItem="HWb-UO-vpY" secondAttribute="top" id="ch0-3m-UBe"/>
+                                    <constraint firstItem="fjQ-uR-E8X" firstAttribute="centerY" secondItem="HWb-UO-vpY" secondAttribute="centerY" id="h4z-ZD-EO5"/>
+                                    <constraint firstAttribute="trailing" secondItem="fjQ-uR-E8X" secondAttribute="trailing" id="k3M-cs-fmw"/>
+                                    <constraint firstItem="fjQ-uR-E8X" firstAttribute="centerX" secondItem="HWb-UO-vpY" secondAttribute="centerX" id="yTc-4Z-0fe"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HWb-UO-vpY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JLq-eQ-ynD"/>
+                            <constraint firstItem="HWb-UO-vpY" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="XRu-sK-Pnw"/>
+                            <constraint firstAttribute="trailing" secondItem="HWb-UO-vpY" secondAttribute="trailing" id="mhS-op-4eM"/>
+                            <constraint firstItem="HWb-UO-vpY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pGi-Kc-vqj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flag" destination="OR1-ne-hQo" id="u6c-wU-ZBM"/>
+                        <outlet property="map" destination="fjQ-uR-E8X" id="dbX-DK-JOT"/>
+                        <outlet property="sv" destination="HWb-UO-vpY" id="zfC-1i-3LG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="TaM-xS-966">
+                    <connections>
+                        <action selector="dragging:" destination="BYZ-38-t0r" id="BXt-gj-EAN"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="325" y="400"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map.jpg" width="814" height="727"/>
+        <image name="redflag.png" width="113" height="113"/>
+    </resources>
+</document>
