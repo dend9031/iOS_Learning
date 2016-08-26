@@ -1,11 +1,3 @@
-//
-//  DetailViewController.swift
-//  example_89
-//
-//  Created by Artem Cherkasov on 8/24/16.
-//  Copyright © 2016 Artem Cherkasov. All rights reserved.
-//
-
 import UIKit
 
 class DetailViewController: UIViewController {

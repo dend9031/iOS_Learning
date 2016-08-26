@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="example_110" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" maximumValue="100" stepValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="EmR-Hk-hEJ">
+                                <rect key="frame" x="253" y="285" width="94" height="29"/>
+                                <connections>
+                                    <action selector="doStep:" destination="BYZ-38-t0r" eventType="valueChanged" id="52F-Kh-VQD"/>
+                                </connections>
+                            </stepper>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Lc0-y8-R8Q">
+                                <rect key="frame" x="225" y="322" width="150" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Scf-cn-vcN"/>
+                                </constraints>
+                            </progressView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="008-6c-YC5">
+                                <rect key="frame" x="0.0" y="332" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="493896962.53864598">
+                                    <!--2016-08-26 09:36:02 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="z7B-kX-Bzb"/>
+                                </connections>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="IiA-iT-jTJ">
+                                <rect key="frame" x="0.0" y="41" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="493897627.09267902">
+                                    <!--2016-08-26 09:47:07 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="countDownChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="7Ml-2n-erQ"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69k-aL-O2K">
+                                <rect key="frame" x="277" y="556" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="countDownChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cO1-i8-UJI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EmR-Hk-hEJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6WF-Xd-FUb"/>
+                            <constraint firstItem="69k-aL-O2K" firstAttribute="centerX" secondItem="008-6c-YC5" secondAttribute="centerX" id="MHF-z5-XiR"/>
+                            <constraint firstItem="IiA-iT-jTJ" firstAttribute="leading" secondItem="008-6c-YC5" secondAttribute="leading" id="Q4S-Jj-zok"/>
+                            <constraint firstItem="Lc0-y8-R8Q" firstAttribute="top" secondItem="EmR-Hk-hEJ" secondAttribute="bottom" constant="8" symbolic="YES" id="T2k-aa-Ygq"/>
+                            <constraint firstItem="69k-aL-O2K" firstAttribute="centerX" secondItem="IiA-iT-jTJ" secondAttribute="centerX" id="TLD-wY-Y1o"/>
+                            <constraint firstItem="IiA-iT-jTJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="TOO-rP-0uV"/>
+                            <constraint firstItem="008-6c-YC5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VDE-py-Zbh"/>
+                            <constraint firstItem="008-6c-YC5" firstAttribute="centerX" secondItem="Lc0-y8-R8Q" secondAttribute="centerX" id="XZ6-DU-NtP"/>
+                            <constraint firstItem="008-6c-YC5" firstAttribute="top" secondItem="Lc0-y8-R8Q" secondAttribute="bottom" constant="8" symbolic="YES" id="Xvo-oq-g7T"/>
+                            <constraint firstItem="69k-aL-O2K" firstAttribute="top" secondItem="008-6c-YC5" secondAttribute="bottom" constant="8" symbolic="YES" id="mQ3-Uk-6Hr"/>
+                            <constraint firstItem="EmR-Hk-hEJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tW3-NX-Vcj"/>
+                            <constraint firstItem="Lc0-y8-R8Q" firstAttribute="centerX" secondItem="EmR-Hk-hEJ" secondAttribute="centerX" id="vuH-PN-PFu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countdowndatepicker" destination="IiA-iT-jTJ" id="33v-hF-oRn"/>
+                        <outlet property="datePicker" destination="008-6c-YC5" id="PG7-cv-siB"/>
+                        <outlet property="progressview" destination="Lc0-y8-R8Q" id="hkE-Ex-NRY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

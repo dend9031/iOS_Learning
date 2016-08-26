@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="example_111" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fmu-nY-y7N">
+                                <rect key="frame" x="241" y="541" width="118" height="31"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="NI8-UF-z9k"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="21S-Ua-fS7" appends="YES" id="7xa-EW-CpJ"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9v2-qi-21Q" customClass="CustomSlider" customModule="example_111" customModuleProvider="target">
+                                <rect key="frame" x="241" y="474" width="118" height="31"/>
+                            </slider>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SdG-9o-fQN">
+                                <rect key="frame" x="240" y="415" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HOJ-2M-TFK">
+                                <rect key="frame" x="201" y="364" width="199" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title=""/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMr-Zd-bPz">
+                                <rect key="frame" x="201" y="326" width="199" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcU-zf-rxe" customClass="CustomButton" customModule="example_111" customModuleProvider="target">
+                                <rect key="frame" x="201" y="288" width="199" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iel-3e-fg3">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="5eK-8Q-qjM"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YMr-Zd-bPz" firstAttribute="top" secondItem="RcU-zf-rxe" secondAttribute="bottom" constant="8" symbolic="YES" id="9cR-ob-I5N"/>
+                            <constraint firstItem="9v2-qi-21Q" firstAttribute="trailing" secondItem="fmu-nY-y7N" secondAttribute="trailing" id="9xB-kI-atL"/>
+                            <constraint firstItem="HOJ-2M-TFK" firstAttribute="leading" secondItem="SdG-9o-fQN" secondAttribute="leading" constant="-39" id="B1N-og-Te4"/>
+                            <constraint firstItem="fmu-nY-y7N" firstAttribute="top" secondItem="9v2-qi-21Q" secondAttribute="bottom" constant="37" id="BaB-9H-cHP"/>
+                            <constraint firstItem="YMr-Zd-bPz" firstAttribute="trailing" secondItem="HOJ-2M-TFK" secondAttribute="trailing" id="Ijl-2b-beL"/>
+                            <constraint firstItem="9v2-qi-21Q" firstAttribute="leading" secondItem="fmu-nY-y7N" secondAttribute="leading" id="SUN-2i-14g"/>
+                            <constraint firstItem="SdG-9o-fQN" firstAttribute="centerX" secondItem="9v2-qi-21Q" secondAttribute="centerX" id="U3T-4Y-xHs"/>
+                            <constraint firstItem="HOJ-2M-TFK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UOC-ae-EyG"/>
+                            <constraint firstItem="YMr-Zd-bPz" firstAttribute="leading" secondItem="HOJ-2M-TFK" secondAttribute="leading" id="c0b-pr-ayF"/>
+                            <constraint firstItem="9v2-qi-21Q" firstAttribute="top" secondItem="SdG-9o-fQN" secondAttribute="bottom" constant="31" id="c6G-Hp-n0M"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fmu-nY-y7N" secondAttribute="bottom" constant="29" id="gFl-xK-2Sl"/>
+                            <constraint firstItem="YMr-Zd-bPz" firstAttribute="trailing" secondItem="RcU-zf-rxe" secondAttribute="trailing" id="hmg-Mn-vCT"/>
+                            <constraint firstItem="YMr-Zd-bPz" firstAttribute="leading" secondItem="RcU-zf-rxe" secondAttribute="leading" id="iBA-uf-EZW"/>
+                            <constraint firstItem="fmu-nY-y7N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k1R-nH-kP7"/>
+                            <constraint firstItem="HOJ-2M-TFK" firstAttribute="top" secondItem="YMr-Zd-bPz" secondAttribute="bottom" constant="8" id="t7j-zt-0nD"/>
+                            <constraint firstItem="SdG-9o-fQN" firstAttribute="top" secondItem="HOJ-2M-TFK" secondAttribute="bottom" constant="23" id="uS6-EC-9bj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="YMr-Zd-bPz" id="aWJ-c9-zaf"/>
+                        <outlet property="button2" destination="RcU-zf-rxe" id="DVq-sZ-X9c"/>
+                        <outlet property="customSgmCnt" destination="HOJ-2M-TFK" id="Yuv-rW-lz5"/>
+                        <outlet property="navBar" destination="Iel-3e-fg3" id="ti3-pv-gs0"/>
+                        <outlet property="segmentedcontoller" destination="SdG-9o-fQN" id="G3C-8k-urC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="21S-Ua-fS7">
+                    <connections>
+                        <action selector="tapped:" destination="BYZ-38-t0r" id="FcY-hk-VMU"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="325" y="329"/>
+        </scene>
+    </scenes>
+</document>
